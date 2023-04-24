@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "noOfPerson": 1,
+    "personCondition": "good",
+    "ageCategory": "child",
+    "personSeenAt": "morning",
+    "location": "-2.108899,36.297936",
+    "category": "homeless"
+}
