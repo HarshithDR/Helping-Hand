@@ -16,7 +16,7 @@ print("JSON string = ", y)
 print()
 
 # JSON file
-f = open("C:\\Users\\91911\\Desktop\\sample.json", "r")
+f = open("\sample.json", "r")
 
 # Reading from file
 data = json.loads(f.read())
