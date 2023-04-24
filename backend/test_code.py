@@ -4,13 +4,13 @@ from firebase import firebase
 from geopy.geocoders import Nominatim
 
 
-from_address = 'vindieselvd123123@gmail.com'
+from_address = '************@gmail.com'
 
 def sendemail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login(from_address, 'qwerty0987!@#$')
+    server.login(from_address, '*************')
     server.sendmail(from_address ,to, content)
     server.close()
 
@@ -28,8 +28,8 @@ def sendemail(to, content):
 
 if __name__ == '__main__':
 
-    firebase = firebase.FirebaseApplication("https://project111111-fbd93-default-rtdb.firebaseio.com/results/")
-    result = firebase.get('-MpZIqGY_pW81eYVrZek','')
+    firebase = firebase.FirebaseApplication("*****************************")
+    result = firebase.get('****************','')
 
     # with open("sample1.json", "r") as f:
     # file_contents = json.load(f)
@@ -58,5 +58,5 @@ if __name__ == '__main__':
                                 "\nLocation:" + location12['display_name'] +
                                 "\n\nThanks and regards,\n Helping Hand Team.")
         # print(content)
-        sendemail('vikastar167@gmail.com', content)
+        sendemail('******************', content)
 
